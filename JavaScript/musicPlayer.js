@@ -42,22 +42,10 @@ const allMusic = [
     src: "GuliMata",
   },
   {
-    name: "In the End",
-    artist: "Linkin Park",
-    img: "IntheEnd",
-    src: "IntheEnd",
-  },
-  {
     name: "Murder Caust",
     artist: "Lorenz",
     img: "MurderCaust",
     src: "MurderCaust",
-  },
-  {
-    name: "Tu Aake Dekhle",
-    artist: "King",
-    img: "TuAakeDekhle",
-    src: "TuAakeDekhle",
   },
   {
     name: "Ya Lalali",
