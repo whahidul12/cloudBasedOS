@@ -1,0 +1,207 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  background-color: #60c2dd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(#ec5d8d 0%, #fca6a0 70%);
+  box-shadow: 0px 6px 15px #515c6f;
+}
+.wrapper i {
+  cursor: pointer;
+}
+.top-bar,
+.progress-area .timer,
+.controls,
+.music-list .header,
+.music-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-bar {
+  width: 90%;
+  margin: 1rem auto;
+}
+.top-bar i {
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0px 6px 12px #515c6f;
+}
+.top-bar span {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 0px 6px 12px #515c6f;
+}
+.img-area {
+  background-color: transparent;
+  height: 19rem;
+  width: fit-content;
+  overflow: hidden;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.img-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.song-details {
+  text-align: center;
+}
+.song-details .songName {
+  font-size: 1.5rem;
+  text-shadow: 0px 6px 12px #515c6f;
+  margin-bottom: -0.5rem;
+}
+.song-details .artistName {
+  font-size: 1rem;
+  text-shadow: 0px 6px 12px #515c6f;
+}
+.progress-area {
+  height: 0.2rem;
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  cursor: pointer;
+}
+.progress-area .progress-bar {
+  position: relative;
+  height: 0.2rem;
+  width: 12%;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #ec5d8d 0%, #f44d52 100%);
+}
+.progress-bar::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 0.9rem;
+  width: 0.9rem;
+  right: -0.5rem;
+  border-radius: 50px;
+  background-color: #ec5d8d;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.progress-area:hover .progress-bar::before {
+  opacity: 1;
+}
+.progress-area .timer {
+  text-shadow: 0px 6px 12px #515c6f;
+  margin-top: 0.2rem;
+}
+.timer span {
+  font-size: 1.1rem;
+  color: rgb(255, 255, 255);
+}
+.controls {
+  margin: 3rem 10% 0.5rem 10%;
+}
+.controls i {
+  font-size: 1.6rem;
+  user-select: none;
+  color: #f44d52;
+  text-shadow: 0px 6px 16px #515c6f;
+}
+.controls .play-pause {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #f44d52;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-pause i {
+  font-size: 1rem;
+  color: #f44d52;
+  height: 2.5rem;
+  width: 2.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: inherit;
+  background-color: rgb(255, 255, 255);
+}
+
+/* =============================================
+================================================
+============================================= */
+
+.music-list {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  box-sizing: border-box;
+  padding: 1rem 1rem 0;
+  background-color: #471d96;
+  border-radius: 1rem 1rem 0 0;
+
+  bottom: -70%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s ease;
+}
+/*?we will use this to show the playlist (classname: show)*/
+.music-list.show {
+  bottom: 2.3rem;
+  opacity: 1;
+  pointer-events: auto;
+}
+/*?we will use this to show the playlist (classname: show)*/
+.music-list .header {
+  font-size: 1.5rem;
+  color: #515c6f;
+  margin-bottom: 1.5rem;
+}
+.header .row i {
+  cursor: default;
+  margin-right: 0.5rem;
+}
+.header #close {
+  font-size: 2rem;
+  color: #515c6f;
+}
+.music-list .ul {
+  max-height: 30rem;
+  overflow-y: auto;
+}
+.music-list .ul::-webkit-scrollbar {
+  width: 0px;
+}
+.music-list .ul li {
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid #000000;
+}
+.music-list .ul li:last-child {
+  border-bottom: 0px;
+}
+.music-list .ul li .row span {
+  font-size: 1rem;
+}
+.ul li .row p {
+  opacity: 0.8;
+  margin: 0.5rem 0;
+}
+.ul li .audio-duration {
+  font-size: 1rem;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/navigation-bar.css" />
+    <link rel="stylesheet" href="./css/status-bar.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <title>Document</title>
+  </head>
+  <body onload="initClock()" style="width: 100%; max-width: 600px">
+    <div id="status-bar">
+      <div class="status-bar-clock">
+        <span id="hour">00</span>:<span id="minutes">00</span>
+        <span id="period">AM</span>
+      </div>
+      <div class="status-bar-battery">
+        <i class="fa-solid fa-wifi"></i>
+        <i class="fa-solid fa-signal"></i>
+        <i class="fa-solid fa-battery-three-quarters"></i>
+      </div>
+    </div>
+    <iframe
+      style="
+        width: 100%;
+        height: calc(100vh - 3rem);
+        border: none;
+        outline: none;
+      "
+      src="./home.html"
+      frameborder="0"
+    ></iframe>
+    <div id="navigation-bar">
+      <a href="#"><i class="fa-solid fa-chevron-left"></i></a>
+      <a href="./index.html"><i class="fa-regular fa-circle"></i></a>
+      <a href="#"><i class="fa-solid fa-chevron-right"></i></a>
+    </div>
+    <script src="./JavaScript/clock/statusBarClock.js"></script>
+  </body>
+</html>

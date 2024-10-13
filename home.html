@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/home-style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <title>Feather OS</title>
+  </head>
+  <body onload="initClock()">
+    <div class="main-container">
+      <div class="container" id="container-1">
+        <div class="search-bar">
+          <a href="#"
+            ><img src="./img/google-icon.png" alt="" style="width: 2.5rem"
+          /></a>
+          <input class="search-bar-input" type="text" />
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="searchBar-clock-space"></div>
+        <div class="clock">
+          <div class="datetime">
+            <div class="date">
+              <span id="dayname">Day</span>,
+              <span id="month">Month</span>
+              <span id="daynum">00</span>,
+              <span id="year">Year</span>
+            </div>
+            <div class="time">
+              <span id="hour">00</span>:<span id="minutes">00</span>:<span
+                id="seconds"
+                >00</span
+              >
+              <span id="period">AM</span>
+            </div>
+          </div>
+        </div>
+        <div class="clock-app-space"></div>
+        <div class="app-1 app">
+          <a href="./apps/calculator.html"
+            ><img src="./img/calculator.png" alt=""
+          /></a>
+        </div>
+        <div class="app-2 app">
+          <a href="./apps/musicPlayer.html"
+            ><img src="./img/music-player.png" alt=""
+          /></a>
+        </div>
+        <div class="app-3 app">
+          <a href="#"><img src="./img/app-store.png" alt="" /></a>
+        </div>
+        <div class="app-4 app">
+          <a href="#"><img src="./img/app-store.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="container" id="container-2"></div>
+    </div>
+
+    <script src="./JavaScript/clock/clock.js"></script>
+  </body>
+</html>

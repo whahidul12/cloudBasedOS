@@ -1,0 +1,12 @@
+#status-bar {
+  width: 95%;
+  height: 2.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.fa-battery-three-quarters {
+  font-size: 1.5rem;
+  color: #d6d6d6;
+}
