@@ -253,6 +253,7 @@ for (let i = 0; i < allMusic.length; i++) {
 }
 
 const allLiTags = ulTag.querySelectorAll("li");
+const a = ulTag.querySelectorAll("a");
 
 function playingNow() {
   for (let j = 0; j < allLiTags.length; j++) {
