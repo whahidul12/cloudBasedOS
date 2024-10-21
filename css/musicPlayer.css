@@ -151,7 +151,7 @@ body {
   left: 0;
   box-sizing: border-box;
   padding: 1rem 1rem 0;
-  background-color: #471d96;
+  background: linear-gradient(#75cbed 0%, #8591dc 70%);
   border-radius: 1rem 1rem 0 0;
 
   bottom: -70%;
@@ -168,16 +168,24 @@ body {
 /*?we will use this to show the playlist (classname: show)*/
 .music-list .header {
   font-size: 1.5rem;
-  color: #515c6f;
+  color: #fff;
   margin-bottom: 1.5rem;
 }
 .header .row i {
   cursor: default;
   margin-right: 0.5rem;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.header .row span {
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .header #close {
   font-size: 2rem;
-  color: #515c6f;
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .music-list .ul {
   max-height: 30rem;
@@ -205,7 +213,6 @@ body {
 .ul li .audio-duration {
   font-size: 1rem;
 }
-.ul .playing {
+/* .ul li.playing {
   color: #fca6a0;
-  pointer-events: none;
-}
+} */

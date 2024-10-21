@@ -99,6 +99,7 @@ function playMusic() {
   playPauseBtnIcon.classList.add("fa-pause");
   playPauseBtnIcon.classList.remove("fa-play");
   mainAudio.play();
+  playingNow();
 }
 
 function pauseMusic() {
@@ -257,19 +258,24 @@ const a = ulTag.querySelectorAll("a");
 
 function playingNow() {
   for (let j = 0; j < allLiTags.length; j++) {
-    if (allLiTags[j].classList.contains("playing")) {
-      allLiTags[j].classList.remove("playing");
-    }
     if (allLiTags[j].getAttribute("li-index") == musicIndex) {
       allLiTags[j].classList.add("playing");
     }
+
     allLiTags[j].setAttribute("onclick", "clicked(this)");
   }
 }
 
 function clicked(element) {
+  console.log(element);
   let getLiIndex = element.getAttribute("li-index");
+  // element.classList.add("playing");
   musicIndex = getLiIndex;
   loadMusic(musicIndex);
   playMusic();
 }
+
+let gg = allLiTags[0].classList.contains("playing");
+console.log(">> >>");
+console.log(gg);
+console.log(">> <<");
