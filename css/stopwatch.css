@@ -1,0 +1,83 @@
+/* styles.css */
+
+/* CSS Variables */
+:root {
+  --primary-color: #1c88db;
+  --secondary-color: #ff5722;
+  --bg-color: #333;
+  --text-color: #fff;
+  --font-size: 2em;
+  --padding: 20px;
+  --margin: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.stopwatch-container {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: var(--padding);
+  background-color: var(--bg-color);
+  width: 100%;
+  height: calc(100vh - 2.3rem);
+}
+
+.time-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size);
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+  min-height: 212px;
+  width: 212px;
+  margin: 0 auto;
+  font-weight: bold;
+  color: var(--text-color);
+  margin: var(--margin) 0;
+}
+
+.controls button {
+  margin: 0 var(--margin);
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.controls button:active {
+  background-color: var(--secondary-color);
+}
+
+.lap-container {
+  margin-top: var(--margin);
+  margin-bottom: var(--margin);
+  text-align: left;
+  color: var(--text-color);
+  overflow-y: auto;
+  text-align: center;
+}
+
+#laps {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  border: 1px solid white;
+  width: 100%;
+  padding: 0.5rem 3rem;
+}
+
+#laps li {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}

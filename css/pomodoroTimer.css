@@ -1,0 +1,71 @@
+:root {
+  --primary-color: #1c88db;
+  --secondary-color: #ff5722;
+  --bg-color: #333;
+  --text-color: #fff;
+  --font-size: 2em;
+  --padding: 2rem;
+  --margin: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--bg-color);
+  padding-top: var(--padding);
+  text-align: center;
+  width: 100%;
+  height: calc(100vh - 2.3rem);
+  color: var(--text-color);
+}
+
+.timer-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 5px solid var(--primary-color);
+  font-size: var(--font-size);
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: var(--text-color);
+  min-height: 212px;
+  width: 212px;
+}
+
+.controls button {
+  margin: 0 var(--margin);
+  padding: 10px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  margin-bottom: var(--margin);
+}
+
+.controls button:active {
+  background-color: var(--secondary-color);
+}
+
+.settings {
+  margin-top: var(--margin);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 1.5rem;
+}
+.settings input {
+  color: var(--text-color);
+  font-size: 1.5rem;
+}
