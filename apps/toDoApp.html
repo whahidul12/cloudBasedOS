@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ?GOOGLE FONT : font-family: 'Poppins', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ?GOOGLE FONT : font-family: 'Poppins', sans-serif; -->
+    <link rel="stylesheet" href="../css/toDoApp.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <title>~ Daily Note ~</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Daily Notes</h1>
+    </header>
+    <div class="inputContainar">
+      <div>
+        <input
+          type="text"
+          class="todoInput"
+          placeholder="Write daily Notes..."
+        />
+        <button class="todoButton" type="submit">
+          <i class="fa-solid fa-folder-plus"></i>
+        </button>
+      </div>
+      <div class="select">
+        <select name="todos" id="filterTodo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
+    </div>
+    <div class="todoContainar">
+      <ul class="todoList"></ul>
+    </div>
+    <script src="../JavaScript/toDoApp.js"></script>
+  </body>
+</html>

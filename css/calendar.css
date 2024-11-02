@@ -1,0 +1,155 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f06d06, #ffcc29);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Calendar Container */
+.calendar-container {
+  width: 90%;
+  max-width: 1200px;
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 1.5em;
+  color: #ff8b00;
+}
+
+header button {
+  background: #ff8b00;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+header button:hover {
+  background: #e67e00;
+}
+
+/* Day Names and Dates */
+.day-names,
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day-names div {
+  font-weight: bold;
+  color: #ff8b00;
+  padding: 10px;
+}
+
+.date {
+  padding: 10px;
+  border-radius: 8px;
+  background: #f1f1f1;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+.date:hover {
+  background: #ffcc29;
+}
+
+.date.today {
+  background: #ff8b00;
+  color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Layout */
+@media (max-width: 1200px) {
+  .calendar-container {
+    padding: 15px;
+  }
+  header h1 {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 500px) {
+  .calendar-container {
+    padding: 10px;
+  }
+  .date {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  header h1 {
+    font-size: 0.8em;
+  }
+  header button {
+    padding: 4px;
+    font-size: 10px;
+  }
+  .day-names {
+    gap: 2px;
+  }
+  .day-names div {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 340px) {
+  header h1 {
+    font-size: 0.8em;
+  }
+  .date {
+    padding: 3px;
+  }
+  .day-names {
+    font-size: 12px;
+  }
+  .day-names div {
+    padding: 3px;
+  }
+}
