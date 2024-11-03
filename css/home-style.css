@@ -38,6 +38,7 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(2px);
   color: white;
+  user-select: none;
   /* !Prevents text selection while dragging */
 }
 
