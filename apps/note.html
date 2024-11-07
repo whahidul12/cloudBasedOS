@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note App</title>
+    <link rel="stylesheet" href="../css/note.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <header>
+        <h1>My Notes</h1>
+        <button id="addNoteButton">+ Add Note</button>
+      </header>
+
+      <main id="notesContainer">
+        <!-- Notes will be rendered here -->
+      </main>
+
+      <div class="note-modal" id="noteModal">
+        <div class="modal-content">
+          <textarea
+            id="noteInput"
+            placeholder="Type your note here..."
+          ></textarea>
+          <button id="saveNoteButton">Save Note</button>
+          <button id="closeModalButton">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="../JavaScript/note.js"></script>
+  </body>
+</html>
