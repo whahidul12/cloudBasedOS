@@ -5,13 +5,21 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
+  background: linear-gradient(135deg, #ffd700 10%, #ffa500 100%);
   color: #ffffff;
+}
+
+.sunny {
+  background: linear-gradient(135deg, #ffd700 10%, #ffa500 100%);
+}
+
+.rainy {
+  background: linear-gradient(135deg, #00c6ff 10%, #0072ff 100%);
 }
 
 .container {
   text-align: center;
-  background: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -61,4 +69,20 @@ button:hover {
   to {
     opacity: 1;
   }
+}
+
+#suggestions {
+  margin-top: 10px;
+  background: white;
+  color: black;
+  border-radius: 5px;
+}
+
+#suggestions div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+#suggestions div:hover {
+  background-color: #e0e0e0;
 }
