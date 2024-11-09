@@ -1,4 +1,4 @@
-const apiKey = "75d197b1c5f25a3a6655508a538544b2";
+const apiKey = "333";
 const suggestionsDiv = document.getElementById("suggestions");
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -42,15 +42,6 @@ function displayWeather(data) {
   document.getElementById(
     "description"
   ).textContent = `☁️ Description: ${data.weather[0].description}`;
-}
-
-function changeBackground(weather) {
-  document.body.className = ""; // Reset classes
-  if (weather.toLowerCase().includes("sun")) {
-    document.body.classList.add("sunny");
-  } else if (weather.toLowerCase().includes("rain")) {
-    document.body.classList.add("rainy");
-  }
 }
 
 function showError(error) {

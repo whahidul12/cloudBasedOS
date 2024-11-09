@@ -9,14 +9,6 @@ body {
   color: #ffffff;
 }
 
-.sunny {
-  background: linear-gradient(135deg, #ffd700 10%, #ffa500 100%);
-}
-
-.rainy {
-  background: linear-gradient(135deg, #00c6ff 10%, #0072ff 100%);
-}
-
 .container {
   text-align: center;
   background: linear-gradient(135deg, #72edf2 10%, #5151e5 100%);
